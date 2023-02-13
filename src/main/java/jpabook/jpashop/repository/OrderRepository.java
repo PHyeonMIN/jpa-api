@@ -111,6 +111,7 @@ public class OrderRepository {
                 .getResultList();
     }
 
+    // 주문 조회 V3 : 엔티티를 DTO로 변환 - 페치 조인 최적화
     public List<Order> findAllWithItem() {
         return em.createQuery(
                 "select distinct o from Order o" +
