@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import java.util.List;
 
+// 간단한 주문 조회 V4 : JPA에서 DTO로 바로 조회
 @Repository
 @RequiredArgsConstructor
 public class OrderSimpleQueryRepository {

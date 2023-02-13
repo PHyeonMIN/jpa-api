@@ -6,6 +6,7 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
+// 간단한 주문 조회 V4 : JPA에서 DTO로 바로 조회
 @Data
 public class OrderSimpleQueryDto {
 
