@@ -12,6 +12,7 @@ public class JpashopApplication {
 		SpringApplication.run(JpashopApplication.class, args);
 	}
 
+	// 간단한 주문 조회 V1 : 엔티티를 직접 노출
 	@Bean
 	Hibernate5Module hibernate5Module() {
 		Hibernate5Module hibernate5Module = new Hibernate5Module();
