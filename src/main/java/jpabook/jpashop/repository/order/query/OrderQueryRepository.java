@@ -97,6 +97,7 @@ public class OrderQueryRepository {
                 .collect(Collectors.groupingBy(OrderItemQueryDto::getOrderId));
     }
 
+    // 주문조회 V6 : JPA에서 DTO로 직접 조회, 플랫 데이터 최적화
     public List<OrderFlatDto> findAllByDto_flat() {
         return em.createQuery(
                 "select new jpabook.jpashop.repository.order.query.OrderFlatDto(o.id, m.name, o.orderDate, o.status, d.address, i.name, oi.orderPrice, oi.count)" +

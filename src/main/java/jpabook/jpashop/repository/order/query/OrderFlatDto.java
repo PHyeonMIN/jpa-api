@@ -6,6 +6,7 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
+// 주문조회 V6 : JPA에서 DTO로 직접 조회, 플랫 데이터 최적화
 @Data
 public class OrderFlatDto {
 

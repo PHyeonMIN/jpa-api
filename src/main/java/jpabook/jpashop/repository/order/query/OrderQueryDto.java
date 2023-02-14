@@ -10,7 +10,7 @@ import java.util.List;
 
 // 주문 조회 V4 : JPA에서 DTO 직접 조회
 @Data
-@EqualsAndHashCode(of = "orderId")
+@EqualsAndHashCode(of = "orderId")      // collect.groupby 할 때 해당 기준으로 묶어줌
 public class OrderQueryDto {
 
     private Long orderId;
