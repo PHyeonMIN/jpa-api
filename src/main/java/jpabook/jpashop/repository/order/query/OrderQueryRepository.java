@@ -63,6 +63,7 @@ public class OrderQueryRepository {
      * 데이터를 한꺼번에 처리할 때 많이 사용하는 방식
      *
      */
+    // 주문조회 V5 : JPA에서 DTO 직접 조회 - 컬렉션 조회 최적화
     public List<OrderQueryDto> findAllByDto_optimization() {
 
         //루트 조회(toOne 코드를 모두 한번에 조회)
