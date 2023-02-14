@@ -3,6 +3,7 @@ package jpabook.jpashop.repository.order.query;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
+// 주문 조회 V4 : JPA에서 DTO 직접 조회
 @Data
 public class OrderItemQueryDto {
 

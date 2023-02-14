@@ -8,6 +8,7 @@ import lombok.EqualsAndHashCode;
 import java.time.LocalDateTime;
 import java.util.List;
 
+// 주문 조회 V4 : JPA에서 DTO 직접 조회
 @Data
 @EqualsAndHashCode(of = "orderId")
 public class OrderQueryDto {
